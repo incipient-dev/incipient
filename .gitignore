@@ -3,3 +3,5 @@ dist/
 .incipient/
 .env
 dist-test/
+assets/media-generation-*
+assets/incipient-logo-pp-400.png

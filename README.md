@@ -91,8 +91,7 @@ Tools: `read_file`, `list_dir`, `grep`, `write_file`, `edit_file`,
 > **Provider note:** some gateways only allow listed programming clients and
 > refuse direct SDK calls. Xingchi (`https://xingchiapi.com/v1`) returns
 > `403 client_not_allowed` for INCIPIENT's direct calls (verified 2026-11-17)
-> — its credit can only be spent through a client on its allow-list. A
-> `run-xingchi.sh` wrapper is included for the day that policy changes.
+> — its credit can only be spent through a client on its allow-list.
 >
 > **Verified working path (2026-11-17): OpenCode as the brain, INCIPIENT as
 > the hands.** OpenCode is on Xingchi's allow-list. Add INCIPIENT as an MCP
