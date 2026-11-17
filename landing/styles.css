@@ -1,10 +1,10 @@
 :root {
   color-scheme: dark;
-  --bg: #111127;
-  --panel: #18182f;
+  --bg: #06060f;
+  --panel: #0d0d1c;
   --text: #f2f1f8;
   --muted: #a5a4ba;
-  --lime: #c6f565;
+  --lime: #a9ef4d;
   --line: #ffffff13;
   --mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
   --sans: Inter, 'Segoe UI', Arial, sans-serif;
@@ -32,7 +32,7 @@ nav .nav-cta { color: var(--text); border: 1px solid #ffffff24; border-radius: 5
 .hero { padding-top: 88px; padding-bottom: 84px; display: grid; grid-template-columns: 1.12fr 1fr; align-items: center; gap: 35px; }
 .eyebrow { font: 10px/1.6 var(--mono); letter-spacing: 1.7px; color: var(--lime); margin: 0 0 25px; text-transform: uppercase; }
 .hero .eyebrow { display: flex; align-items: center; gap: 9px; letter-spacing: 1.15px; }
-.status-dot { display: inline-block; width: 6px; height: 6px; background: var(--lime); border-radius: 50%; flex-shrink: 0; box-shadow: 0 0 10px #c6f533; }
+.status-dot { display: inline-block; width: 6px; height: 6px; background: var(--lime); border-radius: 50%; flex-shrink: 0; box-shadow: 0 0 10px #a9ef4d; }
 .hero-name { margin: 0 0 16px; font: 12px var(--mono); letter-spacing: 4px; color: var(--muted); }
 h1 { margin: 0; font-size: clamp(48px, 5.5vw, 76px); line-height: 1.05; font-weight: 600; letter-spacing: -4px; }
 h1 span { color: var(--lime); }
@@ -41,7 +41,7 @@ h1 span { color: var(--lime); }
 .button { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 28px; padding: 14px 21px; border-radius: 5px; font-size: 13px; font-weight: 600; transition: background .18s, transform .18s, border-color .18s; }
 .button:hover { transform: translateY(-2px); }
 .button-primary { color: #171c10; background: var(--lime); border: 1px solid var(--lime); }
-.button-primary:hover { background: #d6ff8b; }
+.button-primary:hover { background: #c7f48b; }
 .button-secondary { border: 1px solid #ffffff25; background: #ffffff03; }
 .button-secondary:hover { border-color: var(--lime); }
 .hero-details { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 29px; color: #8d8ca5; font: 10px/1.6 var(--mono); }
@@ -69,19 +69,19 @@ h2 span { color: #9491ae; }
 .section-heading > p { margin: 0 0 3px; color: var(--muted); font-size: 13px; line-height: 1.9; }
 .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .feature-card { position: relative; display: flex; flex-direction: column; align-items: flex-start; padding: 27px; min-height: 265px; background: linear-gradient(140deg, #ffffff04, #ffffff01); border: 1px solid var(--line); border-radius: 7px; transition: border-color .2s, background .2s; }
-.feature-card:hover { border-color: #c6f54355; background: #ffffff04; }
-.feature-icon { width: 37px; height: 37px; border: 1px solid #c6f56520; border-radius: 7px; background: #c6f56507; display: grid; place-items: center; color: var(--lime); font-size: 25px; line-height: 1; margin-bottom: 24px; }
+.feature-card:hover { border-color: #a9ef4d55; background: #ffffff04; }
+.feature-icon { width: 37px; height: 37px; border: 1px solid #a9ef4d20; border-radius: 7px; background: #a9ef4d07; display: grid; place-items: center; color: var(--lime); font-size: 25px; line-height: 1; margin-bottom: 24px; }
 .code-icon { font: 16px var(--mono); }
 .card-number { position: absolute; top: 31px; right: 25px; font: 10px var(--mono); color: #6e6b87; }
 h3 { font-size: 16px; line-height: 1.4; font-weight: 500; margin: 0 0 11px; letter-spacing: -.2px; }
 .feature-card p { font-size: 12px; line-height: 1.85; margin: 0 0 23px; color: var(--muted); }
 .card-label { margin-top: auto; color: #817e9a; font: 8px var(--mono); letter-spacing: 1.2px; }
-.workflow-section { background: #0e0e22; border-block: 1px solid var(--line); }
+.workflow-section { background: #08080f; border-block: 1px solid var(--line); }
 .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-bottom: 35px; }
 .step-number { display: block; font: 11px var(--mono); color: var(--lime); border-top: 1px solid #ffffff1c; padding-top: 20px; margin-bottom: 20px; }
 .step h3 { font-size: 17px; }
 .step p { max-width: 300px; color: var(--muted); font-size: 13px; line-height: 1.8; margin: 0; }
-.terminal { border: 1px solid #ffffff1b; border-radius: 7px; overflow: hidden; background: #141428; }
+.terminal { border: 1px solid #ffffff1b; border-radius: 7px; overflow: hidden; background: #0c0c1a; }
 .terminal-header { min-height: 39px; border-bottom: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; padding-inline: 17px; color: #79758f; font: 9px var(--mono); }
 .terminal-dots { display: flex; gap: 5px; }
 .terminal-dots i { width: 6px; height: 6px; border-radius: 50%; background: #55516a; }
@@ -99,12 +99,12 @@ code { font-family: inherit; }
 .command-label { margin: 20px 0 11px; font-size: 11px; color: #c1bed2; }
 .command-label:first-child { margin-top: 0; }
 .command-label > span { color: #77728e; font: 10px var(--mono); margin-right: 10px; }
-.code-box { background: #0c0c1d; border: 1px solid #ffffff13; border-radius: 5px; }
+.code-box { background: #07070f; border: 1px solid #ffffff13; border-radius: 5px; }
 .code-box pre { padding: 16px 18px; }
 .command-note { color: #8d88a3; font: 10px/1.8 var(--mono); margin: 16px 0 0; }
 .safety-wrap { padding-bottom: 20px; }
-.safety-panel { position: relative; overflow: hidden; padding: 49px 56px; display: grid; grid-template-columns: 100px 1fr; gap: 35px; background: linear-gradient(115deg, #c6f56509, #ffffff02); border: 1px solid #c6f56525; border-radius: 8px; }
-.safety-emblem { width: 76px; height: 86px; display: grid; place-items: center; font-size: 58px; color: var(--lime); background: #c6f56508; border: 1px solid #c6f56533; border-radius: 16px 16px 32px 32px; margin-top: 8px; }
+.safety-panel { position: relative; overflow: hidden; padding: 49px 56px; display: grid; grid-template-columns: 100px 1fr; gap: 35px; background: linear-gradient(115deg, #a9ef4d09, #ffffff02); border: 1px solid #a9ef4d25; border-radius: 8px; }
+.safety-emblem { width: 76px; height: 86px; display: grid; place-items: center; font-size: 58px; color: var(--lime); background: #a9ef4d08; border: 1px solid #a9ef4d33; border-radius: 16px 16px 32px 32px; margin-top: 8px; }
 .safety-panel .eyebrow { margin-bottom: 15px; }
 .safety-panel h2 { font-size: 35px; }
 .safety-panel p:not(.eyebrow) { color: var(--muted); max-width: 680px; font-size: 13px; line-height: 1.9; margin: 20px 0; }
