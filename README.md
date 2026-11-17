@@ -88,6 +88,12 @@ answers in plain text with no tool block, the task is done.
 Tools: `read_file`, `list_dir`, `grep`, `write_file`, `edit_file`,
 `run_command`, `remember`.
 
+> **Provider note:** some gateways only allow listed programming clients and
+> refuse direct SDK calls. Xingchi (`https://xingchiapi.com/v1`) returns
+> `403 client_not_allowed` for INCIPIENT's direct calls (verified 2026-11-17)
+> — its credit can only be spent through a client on its allow-list. A
+> `run-xingchi.sh` wrapper is included for the day that policy changes.
+
 ## MCP
 
 ```json
