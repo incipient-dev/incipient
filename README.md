@@ -93,6 +93,20 @@ Tools: `read_file`, `list_dir`, `grep`, `write_file`, `edit_file`,
 > `403 client_not_allowed` for INCIPIENT's direct calls (verified 2026-11-17)
 > — its credit can only be spent through a client on its allow-list. A
 > `run-xingchi.sh` wrapper is included for the day that policy changes.
+>
+> **Verified working path (2026-11-17): OpenCode as the brain, INCIPIENT as
+> the hands.** OpenCode is on Xingchi's allow-list. Add INCIPIENT as an MCP
+> server in `~/.config/opencode/opencode.json` (`mcp.incipient`: `type`
+> `local`, `command` `["node", "<incipient>/dist/cli.js", "mcp"]`), set the
+> Xingchi provider (`baseURL https://xingchiapi.com/v1`, key from
+> `XINGCHI_API_KEY` — see `opencode-xingchi.sh`), then run from the project
+> dir with `approvalMode: "auto"` in `incipient.config.json` so MCP writes
+> are allowed. **Close stdin (`< /dev/null`) — `opencode run` waits on an
+> open stdin forever and looks stalled.** Proof: `hello.txt` created via
+> `incipient_write_file`, confirmed in `.incipient/audit.log`.
+> Codex also chats fine over Xingchi (responses API), but its MCP tools need
+> the `codex-code-mode-host` binary, which the npm install here does not
+> ship — so Codex cannot drive INCIPIENT's tools on this machine.
 
 ## MCP
 
